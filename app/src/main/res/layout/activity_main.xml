@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ConstraintContentConnecting"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:layout_margin="20dp">
+            <TextView
+                android:id="@+id/txtConectando"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Conectando..."
+                android:textSize="20dp"/>
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ConstraintContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha:"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Estimacion soc:"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Conf. Interval soc 1:"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Conf. Interval soc 2:"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt3"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Estimacion sompa:"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt4"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Conf. Interval sompa 1:"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt5"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/txt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Conf. Interval sompa 2 :"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt6"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/txt8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Estimacion Rin:"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt7"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/txt9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Conf. Interval Rin 1:"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt8"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/txt10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Conf. Interval Rin 2 :"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt9"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/txt11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Corriente:"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt10"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+            <TextView
+                android:id="@+id/txt12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Voltaje:"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/txt11"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/txtFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Result:"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/txt1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtEstimacionSoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Result:"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/txt2"
+                app:layout_constraintTop_toBottomOf="@+id/txtFecha"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtConfIntervalSoc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Result:"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/txt3"
+                app:layout_constraintTop_toBottomOf="@+id/txtEstimacionSoc"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtConfIntervalSoc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Result:"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/txt4"
+                app:layout_constraintTop_toBottomOf="@+id/txtConfIntervalSoc1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtEstimacionSompa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Result:"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/txt5"
+                app:layout_constraintTop_toBottomOf="@+id/txtConfIntervalSoc2"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtConfIntervalSompa1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Result:"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/txt6"
+                app:layout_constraintTop_toBottomOf="@+id/txtEstimacionSompa"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtConfIntervalSompa2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Result:"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/txt7"
+                app:layout_constraintTop_toBottomOf="@+id/txtConfIntervalSompa1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtEstimacionRin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Result:"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/txt8"
+                app:layout_constraintTop_toBottomOf="@+id/txtConfIntervalSompa2"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtConfIntervalRin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Result:"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/txt9"
+                app:layout_constraintTop_toBottomOf="@+id/txtEstimacionRin"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtConfIntervalRin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Result:"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/txt10"
+                app:layout_constraintTop_toBottomOf="@+id/txtConfIntervalRin1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtCorriente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Result:"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/txt11"
+                app:layout_constraintTop_toBottomOf="@+id/txtConfIntervalRin2"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtVoltaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Result:"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/txt12"
+                app:layout_constraintTop_toBottomOf="@+id/txtCorriente"
+                tools:ignore="MissingConstraints" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btnComenzar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0"
+            android:textColor="#fff"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:drawableTint="#fff"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:text="Comenzar" />
+
+    </LinearLayout>
+</LinearLayout>
