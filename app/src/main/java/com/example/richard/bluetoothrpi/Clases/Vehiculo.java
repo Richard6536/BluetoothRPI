@@ -3,6 +3,8 @@ package com.example.richard.bluetoothrpi.Clases;
 import android.os.AsyncTask;
 import android.util.Log;
 
+import com.example.richard.bluetoothrpi.MainActivity;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -89,7 +91,7 @@ public class Vehiculo {
 
                     String m = buffer.toString();
                     JSONObject resultadoJSON = new JSONObject(m);
-                    String mensaje = resultadoJSON.getString("value");
+                    String mensaje = resultadoJSON.getString("TipoRespuesta");
                     return mensaje;
                 }
                 catch (JSONException e) {
@@ -121,7 +123,9 @@ public class Vehiculo {
         {
             try
             {
-                //new MapActivity.pasoOnPostPosicionAsync().execute("000","000");
+                //String activityActual = ControllerActivity.activiyAbiertaActual.getClass().getSimpleName();
+                MainActivity mainActivity = (MainActivity) ControllerActivity.activiyAbiertaActual;
+                mainActivity.respuestaWebService(respuestaOdata);
             }
             catch (Exception e)
             {
